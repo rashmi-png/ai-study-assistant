@@ -3,8 +3,7 @@ from google import genai
 from pypdf import PdfReader
 
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
-MODEL = "gemini-3.5-flash"
-
+MODEL = "gemini-3.5-flash-lite"
 PROMPTS = {
     "Summary": "Summarize these study notes in simple bullet points:",
     "Quiz": "Create 5 multiple-choice questions from these study notes. Give 4 options (A-D) for each question, and list the correct answers at the end:",
